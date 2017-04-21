@@ -21,6 +21,7 @@ namespace SmartDome
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
+            //Comment Added.
         }
 
         public IConfigurationRoot Configuration { get; }
